@@ -15,9 +15,13 @@ Security: Uses environment variables (`.env`) to secure sensitive credentials.
 
 Tech Stack
 Language: Python 3.x
+
 Backend: Flask, SQLite
+
 System Interface: psutil
+
 Notifications: smtplib (Email)
+
 Frontend: HTML/CSS, Jinja2 Templating
 
 Installation & Setup
