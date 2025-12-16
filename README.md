@@ -1,5 +1,5 @@
-# sys_monitor
-System Resource Monitor &amp; Alerting Dashboard
+# System Resource Monitor &amp; Alerting Dashboard
+
 A full-stack system monitoring tool built with Python that tracks CPU, Memory, and Disk usage in real-time. It features a web dashboard for visualization, historical data logging via SQLite, and automated email alerts when system thresholds are exceeded.
 
 Features
