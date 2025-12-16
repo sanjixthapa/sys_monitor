@@ -4,9 +4,13 @@ A full-stack system monitoring tool built with Python that tracks CPU, Memory, a
 
 Features
 Real-time Monitoring: Captures system metrics every few seconds using `psutil`.
+
 Automated Alerts: Sends email notifications via SMTP (Gmail) when resources exceed safety thresholds.
+
 Data Persistence: Logs all metrics to a local SQLite database for historical analysis.
+
 Web Dashboard: Flask-based interface to visualize system health trends.
+
 Security: Uses environment variables (`.env`) to secure sensitive credentials.
 
 Tech Stack
