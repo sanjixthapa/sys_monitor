@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+        th { background-color: #007BFF; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        .refresh { margin-bottom: 15px; display: inline-block; padding: 10px 15px; background: #28a745; color: white; text-decoration: none; border-radius: 5px;}
+    </style>
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <h1>Server Health Dashboard</h1>
+    <a href="/" class="refresh">Refresh Data</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>CPU Usage (%)</th>
+                <th>Memory Usage (%)</th>
+                <th>Disk Usage (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in metrics %}
+            <tr>
+                <td>{{ row['timestamp'] }}</td>
+                <td>{{ row['cpu_usage'] }}</td>
+                <td>{{ row['memory_usage'] }}</td>
+                <td>{{ row['disk_usage'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
