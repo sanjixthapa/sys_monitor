@@ -2,7 +2,8 @@
 
 A full-stack system monitoring tool built with Python that tracks CPU, Memory, and Disk usage in real-time. It features a web dashboard for visualization, historical data logging via SQLite, and automated email alerts when system thresholds are exceeded.
 
-Features
+#Features
+
 Real-time Monitoring: Captures system metrics every few seconds using `psutil`.
 
 Automated Alerts: Sends email notifications via SMTP (Gmail) when resources exceed safety thresholds.
@@ -13,7 +14,8 @@ Web Dashboard: Flask-based interface to visualize system health trends.
 
 Security: Uses environment variables (`.env`) to secure sensitive credentials.
 
-Tech Stack
+#Tech Stack
+
 Language: Python 3.x
 
 Backend: Flask, SQLite
